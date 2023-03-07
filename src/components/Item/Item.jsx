@@ -1,10 +1,11 @@
 import React from 'react'
+import UserImg from '../../assets/image/users.png'
 
 export default function Item({user}) {
   return (
     <li className='w-25 border me-1 mb-5 rounded-5'>
       <a href="#" className='text-decoration-none text-dark'>
-      <img className='d-block m-auto' src="https://o.remove.bg/downloads/ec70aff4-3e42-4c9d-b49b-9221e22c94be/users-vector-icon-png_260862-removebg-preview.png" alt="user" width={250} />
+      <img className='d-block m-auto' src={UserImg} alt="user" width={250} />
       <hr />
       <div className='ps-4 pb-5'>
       <h3 className='h5'><strong>Name :</strong> {user.name}</h3>
