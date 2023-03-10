@@ -125,7 +125,7 @@ export default function Header() {
         <div>
         <a className='btn btn-success me-4' href="#">Contact Us</a>
         <a className='btn btn-primary' onClick={() => setCount(count + 1)} href="#">Increment Count</a>
-        <button className='btn btn-info mt-3 ms-5' onClick={() => backToFile()}>Back to file</button>
+        <button className='btn btn-info ms-5' onClick={() => backToFile()}>Back to file</button>
         </div>
       </header>
     </>
