@@ -99,6 +99,10 @@ export default function Header() {
     }
   }, [count])
 
+  const backToFile = () => {
+    window.location.replace('https://login-password-page.vercel.app/')
+  }
+
   return (
     <>
       <header className='border ps-3 pe-3 mt-3 rounded-4 d-flex justify-content-between align-items-center'>
@@ -121,7 +125,7 @@ export default function Header() {
         <div>
         <a className='btn btn-success me-4' href="#">Contact Us</a>
         <a className='btn btn-primary' onClick={() => setCount(count + 1)} href="#">Increment Count</a>
-        <p className='btn btn-info mt-3 ms-5'>{count}</p>
+        <button className='btn btn-info mt-3 ms-5' onClick={() => backToFile()}>Back to file</button>
         </div>
       </header>
     </>
